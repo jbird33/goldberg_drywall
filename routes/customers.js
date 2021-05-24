@@ -5,7 +5,7 @@ const ctrl = require('../controllers');
 
 // ----------------------------------------------------
 
-
+router.get('/customers/show', ctrl.customer.index);
 
 
 // Need this last of (4) -------------------------------
