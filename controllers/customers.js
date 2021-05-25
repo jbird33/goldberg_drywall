@@ -5,7 +5,7 @@ const Customers = require('../models').Customer;
 // ---------------------------------------------------
 
 const index = (req, res) => {
-    res.render('show.ejs', {customers: customer});
+    res.render('/customers/show.ejs', {customers: customer});
 }
 
 

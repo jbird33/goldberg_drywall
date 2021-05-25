@@ -2,15 +2,22 @@
 const express = require('express');
 const app = express();
 
-// const routes = require('./routes');
-
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:false}));
-// The above has to be there befor the below----------------------
+// The above has to be there before the below but, both are required-----------------
+
+// const customer = require('./models/customer.js');
+
+const routes = require('./routes');
+
+app.use('/customers', routes.customers);
+
+// Below tells the site to show the welcome page
 
 app.get('/', (req, res) => {
     res.render('index.ejs');
 })
+
 
 
 
