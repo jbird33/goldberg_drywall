@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of All Customers</title>
 </head>
+
 <body>
-    <h1>Here are your Customers...</h1>
-    
+    <h1>Here are your Customers...</h1><br><br>
+
+    <nav>
+        <a href="/customers/new">Create a New Customer</a><br><br>
+    </nav>
+    <ul class="customers">
+        <% for (let i=0; i < customers.length; i++) { %>
+            <li>
+                <a href="/customers/profile/<%=customers[i].id%>">
+                    <%=customers[i].name %>
+                </a><br><br>
+
+            </li><br><br>
+            <% } %>
+
+    </ul>
+
+
+
 </body>
+
 </html>
