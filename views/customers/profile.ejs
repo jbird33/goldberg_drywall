@@ -9,7 +9,7 @@
 <body>
     <h1>Individual Customer's Profile:  <%=customer.name%></h1>
 
-    <form action = "/customer/<%=customer.id%>?_method=PUT" method="POST">
+    <form action = "/customers/profile/<%=customer.id%>?_method=PUT" method="POST">
         <label for="cust_id">Customer ID: </label> <input type = "text" name="cust_id" value ="<%=customer.id%>" /> <br><br>
         <label for="name">Name: </label> <input type = "text" name="name" value ="<%=customer.name%>" /> <br><br>
         <label for="email">Email: </label> <input type = "text" name="email" value ="<%=customer.email%>" /><br><br>
@@ -19,7 +19,7 @@
         <input type="submit" value="Edit Profile" />
     </form><br><Br>
 
-        <form action="/customer/<%=customer.id%>?_method=DELETE" method="POST">
+        <form action="/customers/profile/<%=customer.id%>?_method=DELETE" method="POST">
             <input type="submit" value="Delete this Customer" />
         </form>
     

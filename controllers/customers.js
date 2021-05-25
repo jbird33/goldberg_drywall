@@ -25,7 +25,7 @@ const editprofile = (req, res) => {
         returning: true
     })
     .then(updatedCustomer => {
-        res.redirect(`customers/profile/${req.params.index}`);
+        res.redirect(`/customers/profile/${req.params.index}`);
     })
 }
 
@@ -34,7 +34,7 @@ const deleteCustomer = (req,res) => {
         where: {id: req.params.index}
     })
     .then(() => {
-        res.redirect('customers/show.ejs');
+        res.redirect('/customers/show');
     })
 }
 
@@ -45,7 +45,7 @@ const newCustomer = (req, res) => {
 const createCustomer = (req, res) => {
     Customer.create(req.body)
     .then(newCustomer => {
-        res.redirect(`customers/profile/${newCustomer.id}`);
+        res.redirect(`/customers/profile/${newCustomer.id}`);
     })
 }
 

@@ -5,17 +5,19 @@ const ctrl = require('../controllers');
 
 // ----------------------------------------------------
 
+// This is my Customers Routes
 router.get('/show', ctrl.customers.index);
 
 router.get('/profile/:index', ctrl.customers.showProfile);
 
 router.put('/profile/:index', ctrl.customers.editprofile);
 
-router.delete('profile/:index', ctrl.customers.deleteCustomer);
+router.delete('/profile/:index', ctrl.customers.deleteCustomer);
 
 router.get('/new', ctrl.customers.newCustomer);
 
-router.post('/new', ctrl.customers.createCustomer);
+router.post('/', ctrl.customers.createCustomer);
+
 
 
 // Need this last of (4) -------------------------------
