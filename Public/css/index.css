@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(235, 233, 152);
+}
+
+h1 {
+    color:rgb(136, 5, 44);
+    font: bolder;
+    font-family: cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a {
+    color:rgb(9, 48, 126);
+    text-decoration: none;
+}

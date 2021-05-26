@@ -7,6 +7,7 @@ const app = express();
 const routes = require('./routes');
 // The above has to be there before the below but, both are required-----------------
 
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
 

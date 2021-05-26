@@ -8,6 +8,7 @@ module.exports = {
         square_ft: 2800,
         bid_amt: 3900,
         contact: 'Andrew Hokamp',
+        customerId: 1
         
     },
     {
@@ -15,6 +16,7 @@ module.exports = {
         square_ft: 1800,
         bid_amt: 2900,
         contact: 'Tony Strom',
+        customerId: 1
         
     }
   ], {});

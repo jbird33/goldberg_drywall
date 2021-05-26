@@ -2,7 +2,7 @@
 const {
   Model
 } = require('sequelize');
-const { post } = require('../routes/jobs');
+/**const { post } = require('../routes/jobs'); Need to ask about this*/
 module.exports = (sequelize, DataTypes) => {
   class Jobs extends Model {
     /**
@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      post.belongsTo(models.Customer, {foreignKey: 'customerId'})
+      Jobs.belongsTo(models.Customer, { foreignKey: 'customerId' })
     }
   };
   Jobs.init({
@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
     square_ft: DataTypes.INTEGER,
     bid_amt: DataTypes.INTEGER,
     contact: DataTypes.STRING,
-    customerID: Datatypes.INTEGER
+    customerId: DataTypes.INTEGER
+    
   }, {
     sequelize,
     modelName: 'Jobs',
