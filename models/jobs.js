@@ -2,6 +2,7 @@
 const {
   Model
 } = require('sequelize');
+const { post } = require('../routes/jobs');
 module.exports = (sequelize, DataTypes) => {
   class Jobs extends Model {
     /**
@@ -10,14 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      post.belongsTo(models.Customer, {foreignKey: 'customerId'})
     }
   };
   Jobs.init({
     address: DataTypes.STRING,
     square_ft: DataTypes.INTEGER,
     bid_amt: DataTypes.INTEGER,
-    contact: DataTypes.STRING
+    contact: DataTypes.STRING,
+    customerID: Datatypes.INTEGER
   }, {
     sequelize,
     modelName: 'Jobs',
