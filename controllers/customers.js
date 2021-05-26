@@ -1,5 +1,5 @@
 // Standard needed line of code ----------------------
-
+const Jobs = require('../models').Jobs;
 const Customer = require('../models').Customer;
 
 // ---------------------------------------------------
@@ -12,7 +12,11 @@ const index = (req, res) => {
 }
 
 const showProfile = (req, res) => {
-    Customer.findByPk(req.params.index)
+    Customer.findByPk(req.params.index, {
+        include: [{
+            model: Jobs
+        }]
+    })
     .then(foundCustomer => {
         console.log(foundCustomer);
         res.render('customers/profile.ejs', {customer: foundCustomer})
