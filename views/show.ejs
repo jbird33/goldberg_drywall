@@ -7,7 +7,22 @@
     <title>Jobs Listings</title>
 </head>
 <body>
-    <h1>This Page shows all the jobs Goldberg Drywall has</h1>
+    <h1>Goldberg Drywall Job Listings:</h1><br><br>
+
+    <nav>
+        <a href="/new">Create a New Job Listing</a><br><br>
+    </nav>
+    <ul class="jobs">
+        <% for (let i=0; i < jobs.length; i++) { %>
+            <li>
+                <a href="/jobs/<%=jobs[i].id%>">
+                    <%=jobs[i].address %>
+                </a><br><br>
+
+            </li><br><br>
+            <% } %>
+
+    </ul>
     
 </body>
 </html>

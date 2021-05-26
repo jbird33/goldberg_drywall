@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
 
 app.use('/customers', routes.customers);
+app.use('/jobs', routes.jobs);
 
 // Below tells the site to show the welcome page
 
