@@ -7,7 +7,16 @@
     <title>Create a New Job</title>
 </head>
 <body>
-    <h1>Create a New Job Here...</h1>
+    <h1>Create a New Job Listing:</h1><br><br>
+
+    <form action = '/jobs' method= "POST">
+        <label for="id">Job ID: </label> <input type = "text" name="id" /> <br><br>
+        <label for="address">Address: </label> <input type = "text" name="address" /> <br><br>
+        <label for="square_ft">Square Feet: </label> <input type = "text" name="square_ft" /><br><br>
+        <label for="bid_amt">Bid Amount: </label> <input type = "text" name="bid_amt" /><br><br>
+        <label for="contact">Contact: </label> <input type = "text" name="contact"/> <br><br>
+        <input type="submit" value="Create Profile"/>
+    </form>
     
 </body>
 </html>

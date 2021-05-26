@@ -18,15 +18,46 @@ const showJob = (req, res) => {
     })
 }
 
+const editJob = (req, res) => {
+    Job.update(req.body, {
+        where: {id: req.params.index},
+        returning: true
+    })
+    .then(updatedJob => {
+        res.redirect(`/jobs/${req.params.index}`);
+    })
+}
 
-// const newJob = (req, res) => {
-//     res.render('/new.ejs');
-// }
+const deleteJob = (req, res) => {
+    Job.destroy({
+        where: {id: req.params.index}
+    })
+    .then(() => {
+        res.redirect('/jobs/show'); 
+    })
+}
+
+const newJob = (req, res) => {
+    res.render('new.ejs');
+}
+
+const createJob = (req, res) => {
+    Job.create(req.body)
+    .then(newJob => {
+        res.redirect(`/jobs/${newJob.id}`);
+    })
+}
+
+
 
 // Export here ---------------------------------------
 
 module.exports = {
     indexJob,
     showJob, 
-    // newJob
+    editJob,
+    deleteJob,
+    newJob,
+    createJob
+
 }

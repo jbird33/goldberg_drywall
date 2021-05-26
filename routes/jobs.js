@@ -7,12 +7,19 @@ const ctrl = require('../controllers');
 
 // This is my Jobs Routes -----------------------------
 
+router.get('/new', ctrl.jobs.newJob);
+
+router.post('/', ctrl.jobs.createJob);
+
 router.get('/show', ctrl.jobs.indexJob);
 
 router.get('/:index', ctrl.jobs.showJob);
 
+router.put('/:index', ctrl.jobs.editJob);
 
-// router.get('/new', ctrl.jobs.newJob);
+router.delete('/:index', ctrl.jobs.deleteJob); 
+
+
 
 // Need this last of (4) -------------------------------
 module.exports = router;
