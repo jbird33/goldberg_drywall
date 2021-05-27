@@ -30,6 +30,10 @@ Each of these collected bits of information is formatted so that the user can vi
 
 ![ERD Diagram](https://raw.githubusercontent.com/jbird33/goldberg_drywall/main/images/DB%20Diagram.PNG)
 
+### Future features
+
+As is noted in the diagram above, I would like to add a table to track the current _Employees_ at Goldberg Drywall. The atrributes that I would think the user could get the most benefit from are the Name, Address, Phone, Email, and Current Wage. This can be done at a later point and could lead to an assigning _Jobs_ to a _Employee_ relationship.
+
 ## List of Technologies Used / Dependencies
 
 **Here is a list of technologies I used to design and implement this application:**
@@ -51,3 +55,11 @@ Each of these collected bits of information is formatted so that the user can vi
 - pg
 
 ## Installation Instructions / Getting Started: 
+
+**To set up and use this application:**
+
+    1. Fork and clone the repository
+    2. Use your console and install the listed dependencies
+    3. For example: npm install sequelize-cli
+    4. npx sequelize db:migrate
+    5. npx sequelize db:seed:all
