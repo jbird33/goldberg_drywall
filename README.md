@@ -26,9 +26,13 @@ Next, the user should be keeping track of each _Job(s)_ they have for each of th
 
 Each of these collected bits of information is formatted so that the user can view the data in a profile type setting, or in a complete list of all. This will be so for both the _Customer_, and the _Job_ listings. The complete list page will have limited information shown but, have the capability to move to the profile. In the profile setting, the user can see the more detailed information, edit the selected fields, or delete the profile altogether.
 
+**Here is the ERD Diagram I used for my Database Model:**
+
+![ERD Diagram](https://raw.githubusercontent.com/jbird33/goldberg_drywall/main/images/DB%20Diagram.PNG)
+
 ## List of Technologies Used / Dependencies
 
-Here is a list of technologies I used to design and implement this application:
+**Here is a list of technologies I used to design and implement this application:**
 - Visual Studio Code
 - Node.js
 - Sequelize
@@ -36,8 +40,9 @@ Here is a list of technologies I used to design and implement this application:
 - CMD
 - Express
 - Postgres
+- Lucid Diagram
 
-Here is the a list of my installed dependencies:
+**Here is the a list of my installed dependencies:**
 - ejs
 - method-override
 - body-parser
