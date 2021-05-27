@@ -6,7 +6,7 @@ The Goldberg Drywall application was designed and implemented, to be used by a s
 
 ## Brief Example:
 
-[homepage image](https://github.com/jbird33/goldberg_drywall/blob/main/images/Homepage.PNG)
+[homepage image](https://raw.githubusercontent.com/jbird33/goldberg_drywall/main/images/Homepage.PNG)
 
 ## List of Features / User Stories
 
