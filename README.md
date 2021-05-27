@@ -2,7 +2,7 @@
 
 ## Description:
 
-The Goldberg Drywall application was designed and implemented, to be used by a small business contractor at Goldberg Drywall. Most private business owners on this scale cannot afford, would not even come close to using all the features, or even want to take the time to learn large scale commercial products. This app allows for the regular Joe/Jill, to keep track of basic Customer information and the current list of Jobs they have going at the time. The user can **Create**, **Read**, **Update**, or even **Delete** the data as they see fit, without having to train on how to do so.
+The Goldberg Drywall application was designed and implemented, to be used by a small business contractor at Goldberg Drywall. Most private business owners on this scale cannot afford, would not even come close to using all the features, or even want to take the time to learn large scale commercial products. This app allows for the regular Joe/Jill, to keep track of basic _Customer_ information and the current list of Jobs they have going at the time. The user can **Create**, **Read**, **Update**, or even **Delete** the data as they see fit, without having to train on how to do so.
 
 ## Brief Example:
 
@@ -24,7 +24,7 @@ Next, the user should be keeping track of each _Job(s)_ they have for each of th
 - Bid Amount (total amount sent to customer via contract)
 - Contact (Commonly not the Customer direct i.e., Superintendent, Foreman)
 
-Each of these collected bits of information is formatted so that the user can view the data in a profile type setting, or in a complete list of all. This will be so for both the Customer, and the Job Listings. The complete list page will have limited information shown but, have the capability to move to the profile. In the profile setting, the user can see the more detailed information, edit the selected fields, or delete the profile altogether.
+Each of these collected bits of information is formatted so that the user can view the data in a profile type setting, or in a complete list of all. This will be so for both the _Customer_, and the _Job_ listings. The complete list page will have limited information shown but, have the capability to move to the profile. In the profile setting, the user can see the more detailed information, edit the selected fields, or delete the profile altogether.
 
 ## List of Technologies Used / Dependencies
 
