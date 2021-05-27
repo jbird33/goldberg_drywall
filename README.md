@@ -27,3 +27,22 @@ Next, the user should be keeping track of each _Job(s)_ they have for each of th
 Each of these collected bits of information is formatted so that the user can view the data in a profile type setting, or in a complete list of all. This will be so for both the Customer, and the Job Listings. The complete list page will have limited information shown but, have the capability to move to the profile. In the profile setting, the user can see the more detailed information, edit the selected fields, or delete the profile altogether.
 
 ## List of Technologies Used / Dependencies
+
+Here is a list of technologies I used to design and implement this application:
+- Visual Studio Code
+- Node.js
+- Sequelize
+- Git Bash
+- CMD
+- Express
+- Postgres
+
+Here is the a list of my installed dependencies:
+- ejs
+- method-override
+- body-parser
+- nodemon
+- sequelize-cli
+- pg
+
+## Installation Instructions / Getting Started: 
