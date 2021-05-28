@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,38 @@
     <title>Customers Profile Page</title>
     <link rel="stylesheet" href="/css/index.css">
 </head>
+
 <body>
-    <h1>Individual Customer's Profile:  <%=customer.name%></h1>
+    <header>
+        <h1>Individual Customer's Profile: <%=customer.name%></h1>
+    </header>
 
-    <form action = "/customers/profile/<%=customer.id%>?_method=PUT" method="POST">
-        <label for="cust_id">Customer ID: </label> <input type = "text" name="cust_id" value ="<%=customer.id%>" /> <br><br>
-        <label for="name">Name: </label> <input type = "text" name="name" value ="<%=customer.name%>" /> <br><br>
-        <label for="email">Email: </label> <input type = "text" name="email" value ="<%=customer.email%>" /><br><br>
-        <label for="phone">Phone: </label> <input type = "text" name="phone" value ="<%=customer.phone%>" /><br><br>
-        <label for="address">Address: </label> <input type = "text" name="address" value ="<%=customer.address%>" /> <br><br>
+    <div class="forms">
+        <form action="/customers/profile/<%=customer.id%>?_method=PUT" method="POST">
+            <label for="cust_id">Customer ID: </label> <input type="text" name="cust_id" value="<%=customer.id%>" />
+            <br><br>
+            <label for="name">Name: </label> <input type="text" name="name" value="<%=customer.name%>" /> <br><br>
+            <label for="email">Email: </label> <input type="text" name="email" value="<%=customer.email%>" /><br><br>
+            <label for="phone">Phone: </label> <input type="text" name="phone" value="<%=customer.phone%>" /><br><br>
+            <label for="address">Address: </label> <input type="text" name="address" value="<%=customer.address%>" />
+            <br><br>
 
-        <input type="submit" value="Edit Profile" />
+    </div>
+    <input type="submit" value="Edit Profile" />
     </form><br><Br>
 
-        <form action="/customers/profile/<%=customer.id%>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete this Customer" />
-        </form><br><br>
+    <form action="/customers/profile/<%=customer.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete this Customer" />
+    </form><br><br>
 
-        <select>
-            <% for (let i=0; i < customer.Jobs.length; i++) { %>
-                <option><%= customer.Jobs[i].address %> </option>
-                <% } %>
-        </select>
-    
+    <select>
+        <% for (let i=0; i < customer.Jobs.length; i++) { %>
+            <option>
+                <%= customer.Jobs[i].address %>
+            </option>
+            <% } %>
+    </select>
+
 </body>
+
 </html>
