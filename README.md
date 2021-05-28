@@ -34,6 +34,8 @@ Each of these collected bits of information is formatted so that the user can vi
 
 As is noted in the diagram above, I would like to add a table to track the current _Employees_ at Goldberg Drywall. The atrributes that I would think the user could get the most benefit from are the Name, Address, Phone, Email, and Current Wage. This can be done at a later point and could lead to an assigning _Jobs_ to a _Employee_ relationship.
 
+I would also like to add some functionality features of maybe a 'Home" button or 'Back'. This would allow for more cognitive maneuverability thru the application. Instead of using the browser's back button, the user could traverse thru to each page as they saw fit or as they needed data to show on screen.
+
 ## List of Technologies Used / Dependencies
 
 **Here is a list of technologies I used to design and implement this application:**
